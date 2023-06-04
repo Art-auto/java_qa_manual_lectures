@@ -157,8 +157,8 @@ public class Variables {
          На прикладі String розглянемо прості методи.
          */
 
-//        String message = "Hello students!";
-//        System.out.println(message.length()); // Віддає нам довжину строки
+ //      String message = "Hello students!";
+  //     System.out.println(message.length()); // Віддає нам довжину строки
 //        System.out.println(message.toUpperCase()); // Перетворю маленькі літери на великі
 //        System.out.println(message.toLowerCase()); // Перетворює великі літери на маленькі
 //        System.out.println(message.charAt(0)); // Метод приймає число, яке поверне літеру за її номером у строці. В нашому випадку H

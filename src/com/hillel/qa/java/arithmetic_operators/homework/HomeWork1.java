@@ -13,7 +13,12 @@ public class HomeWork1 {
      *     <li>Вивести в консоль "Моєму другу (число) років".</li>
      * </ul>
      */
-    public static void main(String[] args) {
 
+
+    public static void main(String[] args) {
+int currentYear = 2023;
+int friendYear = 1993;
+int age = currentYear - friendYear;
+        System.out.println("Моєму другу " + age + " років");
     }
 }

@@ -1,16 +1,25 @@
-import OOP.CellPhone;
-import OOP.Tablet;
+import MobilePhone.MobilePhone;
+import MobilePhone.Tablet;
 
 public class Main {
     public static void main(String[] args) {
-        CellPhone myPhone = new CellPhone("iPhone 3G", 10);
+   MobilePhone myPhone = new MobilePhone();
+
+    myPhone.model = "iPhone 3G";
+    myPhone.hasBluetooth = true;
+    myPhone.simCard =2;
+
         System.out.println(myPhone.model);
+myPhone.addCredits(10, "gogo");
+myPhone.call("Mom");
 
-        Tablet myTablet = new Tablet("Samsung", 0);
-        myTablet.pointer = true;
-        myTablet.gps = true;
+Tablet homeTablet = new Tablet();
+homeTablet.model = "X 112";
+homeTablet.addCredits(10,"goho");
+homeTablet.call("Mom");
+homeTablet.pencil = true;
+homeTablet.simCard = true;
 
-        myTablet.call("Hillel reception");
 
     }
 }

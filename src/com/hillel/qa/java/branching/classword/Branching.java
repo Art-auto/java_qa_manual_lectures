@@ -50,7 +50,7 @@ public class Branching {
          Якщо умова не була виконана, зробіть те що в блоці else
          */
 
-        /*int age = 17;
+        /*int age = 20;
         if (age < 18){
             System.out.println("Ви ще дитина!");
         } else {
@@ -68,7 +68,7 @@ public class Branching {
          А ще else if можна використовувати скільки завгодно.
          */
 
-        /*int age = 6;
+        /*int age = 52;
         if (age == 6){
             System.out.println("Час збиратися до школи!");
         } else if (age == 18){

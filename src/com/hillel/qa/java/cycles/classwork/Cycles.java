@@ -64,14 +64,14 @@ public class Cycles {
         доки не буде введено рядок exit.
          */
 
-        /*
-        Scanner console = new Scanner(System.in);
+
+       /*Scanner console = new Scanner(System.in);
         boolean isExit = false;
         while (!isExit) {
             String s = console.nextLine();
             isExit = s.equals("exit");
-        }
-        */
+        }*/
+
 
         /*
         Команда break.
@@ -87,7 +87,7 @@ public class Cycles {
         while (true)
         {
             String s = console.nextLine();
-            if (s.equals("exit"))
+            if (s.equals("bravo"))
                 break;
         }
         */

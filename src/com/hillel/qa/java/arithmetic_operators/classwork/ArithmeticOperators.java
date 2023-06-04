@@ -77,7 +77,7 @@ public class ArithmeticOperators {
         // Постфіксний інкремент та декремент виконується після виразу
         /*
         int a = 10;
-        System.out.println(a++);  // Спочатку виведе в консоль, потім збільшить
+       System.out.println(a++);  // Спочатку виведе в консоль, потім збільшить
         System.out.println(a--); // Спочатку виведе в консоль, потім зменшить
         System.out.println(a);
         */
