@@ -15,10 +15,14 @@ public class HomeWork1 {
      */
     public static void main(String[] args) {
         int currentYear = 2023;
-        int friendYear = 1990;
+        int friendYear = 1992;
 
         int age = currentYear - friendYear;
 
-        System.out.println("Моєму другу " + age + " років.");
+        if (age > 16) {
+            System.out.println("Моєму другу " + age + " років.");
+        } else {
+            System.out.println("Моєму другу менше 16 років.");
+        }
     }
 }
