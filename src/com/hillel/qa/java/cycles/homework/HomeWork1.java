@@ -7,14 +7,15 @@ public class HomeWork1 {
      * </p>
      */
     public static void main(String[] args) {
-                Scanner scanner = new Scanner(System.in);
-                int count = 0;
+        Scanner scanner = new Scanner(System.in);
 
-                while (count < 10) {
-                    System.out.println("Введіть марку авто:");
-                    String carBrand = scanner.nextLine();
-                    System.out.println(carBrand + " - найкраще авто.");
-                    count++;
+        System.out.print("Введіть марку авто: ");
+        String marka = scanner.nextLine();
+
+        int counter = 0;
+        while (counter < 10) {
+            System.out.println(marka + " найкраще авто.");
+            counter++;
         }
     }
 }

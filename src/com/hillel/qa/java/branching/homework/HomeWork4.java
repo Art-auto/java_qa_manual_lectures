@@ -21,13 +21,13 @@ public class HomeWork4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введіть довжину першої сторони: ");
+        System.out.print("Введіть довжину першої сторони: ");
         double a = scanner.nextDouble();
 
-        System.out.println("Введіть довжину другої сторони: ");
+        System.out.print("Введіть довжину другої сторони: ");
         double b = scanner.nextDouble();
 
-        System.out.println("Введіть довжину третьої сторони: ");
+        System.out.print("Введіть довжину третьої сторони: ");
         double c = scanner.nextDouble();
 
         if (isTrianglePossible(a, b, c)) {

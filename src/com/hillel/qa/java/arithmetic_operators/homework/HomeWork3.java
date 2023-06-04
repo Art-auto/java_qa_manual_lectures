@@ -18,12 +18,12 @@ public class HomeWork3 {
      *
      */
     public static void main(String[] args) {
-        int a = 4;
-        int b = 4;
-        int c = 0;
+            int a = 4;
+            int b = 4;
+            int c = 0;
 
-        String digits = "" + a + b + c;
+            String digits = String.valueOf("" + (a + b) + c);
 
-        System.out.println(digits);
+            System.out.println(digits);
+        }
     }
-}
