@@ -14,8 +14,10 @@ public class HomeWork2 {
      *  </ul>
      */
     public static void main(String[] args) {
-        /*final int number = 278;
-        int lastDigit;
-        System.out.println(lastDigit);*/
+        int number = 147858; // Число
+
+        int lastDigit = number % 10; // Отримання останньої цифри
+
+        System.out.println("Остання цифра числа: " + lastDigit);
     }
 }

@@ -10,6 +10,16 @@ public class HomeWork1 {
      * </ul>
      */
     public static void main(String[] args) {
+        int year = 2023;
+        double height = 1.75;
+        String countryName = "Ukraine";
+        boolean isStudent = true;
 
+        System.out.println("year = " + year);
+        System.out.println("height = " + height);
+        System.out.println("countryName = " + countryName);
+        System.out.println("isStudent = " + isStudent);
     }
 }
+
+

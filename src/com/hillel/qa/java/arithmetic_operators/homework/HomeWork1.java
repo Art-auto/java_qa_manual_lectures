@@ -14,6 +14,11 @@ public class HomeWork1 {
      * </ul>
      */
     public static void main(String[] args) {
+        int currentYear = 2023; // Поточний рік
+        int friendAge = 30; // Вік друга
 
+        int friendYear = currentYear - friendAge; // Рік народження друга
+
+        System.out.println("Моєму другу " + friendYear + " років.");
     }
 }
