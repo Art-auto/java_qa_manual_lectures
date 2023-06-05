@@ -152,13 +152,13 @@ public class Cycles {
         */
 
         // Як би виглядав цикл while
-        /*
-        int i = 0;
+
+        /* int i = 0;
         while (i < 10)
         {
             System.out.println(i);
             i++;
-        }
-        */
+        } */
+
     }
 }

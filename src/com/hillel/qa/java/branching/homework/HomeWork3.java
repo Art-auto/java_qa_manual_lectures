@@ -22,6 +22,23 @@ public class HomeWork3 {
      * </p>
      */
     public static void main(String[] args) {
-
+        int symmaCypivli = 740;
+        int gotivka = symmaCypivli;
+        double card = symmaCypivli - (symmaCypivli*0.02);
+        double rahynok = symmaCypivli - (symmaCypivli*0.05);
+        int sposobOplaty = 2;
+        switch (sposobOplaty) {
+            case 1:
+                System.out.println("сумa дo оплати -" + gotivka);
+                break;
+            case 2:
+                System.out.println("сумa дo оплати -" + card);
+                break;
+            case 3:
+                System.out.println("сумa дo оплати -" + rahynok);
+                break;
+            default:
+                System.out.println("Вибиріть способ олати   1-Готшвка  2-Карта  3-Рахунок");
+        }
     }
-}
+ }

@@ -1,5 +1,7 @@
 package com.hillel.qa.java.cycles.homework;
 
+import java.util.Scanner;
+
 public class HomeWork4 {
     /**
      * <p style="font-size:12px">
@@ -32,6 +34,26 @@ public class HomeWork4 {
      * </p>
      */
     public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        Scanner myObj2 = new Scanner(System.in);
+        System.out.println("Ввідіть висоту трикутника! ");
+        int visota = myObj.nextInt();
+        System.out.println("Ввідіть символ трикутника! ");
+        String sumbol = myObj2.nextLine();
+        String c="";
+
+
+        for (int i=1; i <=visota; i++) {
+            c =  c+sumbol;
+
+            System.out.println(c );
+            }
+        }
+
+
+
 
     }
-}
+
+
+

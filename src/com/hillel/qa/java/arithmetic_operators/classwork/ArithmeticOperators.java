@@ -97,7 +97,7 @@ public class ArithmeticOperators {
         int a = 100;
         String text = "Я виконую ДЗ на " + a;
         System.out.println(text);
-        */
+         */
 
         //Арифметичні операції з типом String проводити не можна. Навіть якщо рядок повністю складається з цифр.
        /*

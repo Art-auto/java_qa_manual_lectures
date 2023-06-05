@@ -1,2 +1,4 @@
-package com.hillel.qa.java.cycles.homework;public class Main {
+package com.hillel.qa.java;
+
+public class Main {
 }

@@ -9,5 +9,10 @@ public class HomeWork1 {
      */
     public static void main(String[] args) {
 
+       String Name = "Borys";
+        int age = 27;
+        if (age>=18 && age<=26) {
+            System.out.println(Name +",вітаю ви розібралися як працює if");
+        }
     }
-}
+ }

@@ -1,5 +1,7 @@
 package com.hillel.qa.java.branching.homework;
 
+import java.util.Scanner;
+
 public class HomeWork4 {
     /**
      * <p style="font-size:12px">
@@ -15,9 +17,33 @@ public class HomeWork4 {
      * </p>
      *
      * @see <a href="https://www.w3schools.com/java/java_user_input.asp">Стаття як користуватися Scanner</a>
+     *
      */
-    public static void main(String[] args) {
-
-
-    }
 }
+
+    class Main {
+        public static void main(String[] args) {
+            Scanner myObj = new Scanner(System.in);
+
+            System.out.println("Enter side1; side2; side3. ");
+
+            int side1 = myObj.nextInt();
+            int side2 = myObj.nextInt();
+            int side3 = myObj.nextInt();
+
+
+            if (side1 + side2 > side3){
+                if (side1 + side3 > side2){
+                    if (side2 + side3 > side1){
+                        System.out.println("Трикутник можливо побудувати");
+                    } else {
+                        System.out.println("Трикутник  HE можливо побудувати");
+                    }
+                } else {
+                    System.out.println("Трикутник  HE можливо побудувати");
+                }
+            }else {
+                System.out.println("Трикутник  HE можливо побудувати");
+            }
+        }
+    }
