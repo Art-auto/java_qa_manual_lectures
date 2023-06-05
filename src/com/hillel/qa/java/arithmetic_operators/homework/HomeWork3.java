@@ -18,11 +18,11 @@ public class HomeWork3 {
      *
      */
     public static void main(String[] args) {
-        int a = 4;
-        int b = 4;
-        int c = 0;
+        char a = '"';
+        char b = '8';
+        char c = '0';
 
-        String digits = "";
+        String digits = ""+ a + b + c + a;
 
         System.out.println(digits);
     }

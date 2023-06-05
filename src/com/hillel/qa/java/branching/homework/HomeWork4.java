@@ -1,5 +1,7 @@
 package com.hillel.qa.java.branching.homework;
 
+import java.util.*;
+
 public class HomeWork4 {
     /**
      * <p style="font-size:12px">
@@ -16,8 +18,35 @@ public class HomeWork4 {
      *
      * @see <a href="https://www.w3schools.com/java/java_user_input.asp">Стаття як користуватися Scanner</a>
      */
-    public static void main(String[] args) {
 
+ ;  public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
 
+        // Prompt the user to enter the lengths of the triangle sides
+        System.out.print("Enter the length of side 1: ");
+        double side1 = scanner.nextDouble();
+
+        System.out.print("Enter the length of side 2: ");
+        double side2 = scanner.nextDouble();
+
+        System.out.print("Enter the length of side 3: ");
+        double side3 = scanner.nextDouble();
+
+        // Check if the triangle is possible to construct
+        boolean isPossible = isTrianglePossible(side1, side2, side3);
+
+        // Print the result
+        if (isPossible) {
+            System.out.println("Triangle can be constructed");
+        } else {
+            System.out.println("Triangle cannot be constructed");
+        }
+    }
+
+    private static boolean isTrianglePossible(double side1, double side2, double side3) {
+        return (side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1);
     }
 }
+
+

@@ -1,5 +1,7 @@
 package com.hillel.qa.java.cycles.homework;
 
+import java.util.Scanner;
+
 public class HomeWork4 {
     /**
      * <p style="font-size:12px">
@@ -32,6 +34,19 @@ public class HomeWork4 {
      * </p>
      */
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter the height of the triangle: ");
+        int height = scanner.nextInt();
+
+        System.out.print("Enter the character for the triangle: ");
+        String character = scanner.next();
+
+        for (int i = 1; i <= height; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(character);
+            }
+            System.out.println();
+        }
     }
 }

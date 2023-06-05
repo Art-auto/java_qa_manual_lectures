@@ -22,6 +22,27 @@ public class HomeWork3 {
      * </p>
      */
     public static void main(String[] args) {
+        double purchaseAmount = 100.0;
+        double commissionRate = 0.0;
 
+        String paymentMethod = "card";
+
+        switch (paymentMethod) {
+            case "cash":
+                commissionRate = 0.0;
+                break;
+            case "card":
+                commissionRate = 0.02;
+                break;
+            case "account":
+                commissionRate = 0.05;
+                break;
+            default:
+                System.out.println("Invalid payment method");
+                return;
+        }
+
+        double totalAmount = purchaseAmount + (purchaseAmount * commissionRate);
+        System.out.println("Total payment amount: " + totalAmount);
     }
 }
