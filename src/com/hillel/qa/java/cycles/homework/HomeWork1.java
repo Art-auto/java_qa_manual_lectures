@@ -1,5 +1,7 @@
 package com.hillel.qa.java.cycles.homework;
+
 import java.util.Scanner;
+
 public class HomeWork1 {
     /**
      * <p style="font-size:12px">
@@ -7,14 +9,13 @@ public class HomeWork1 {
      * </p>
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int count = 0;
-
-        while (count < 10) {
-            System.out.println("Введіть марку авто:");
-            String carBrand = scanner.nextLine();
-            System.out.println(carBrand + " - найкраще авто.");
-            count++;
+        Scanner console = new Scanner(System.in);
+        System.out.println("Ввести з клавіатури марку авто");
+        int i = 0;
+        String Text = console.nextLine();
+        while (i < 10) {
+            System.out.println (Text +" найкраще авто");
+            i++;
         }
     }
 }

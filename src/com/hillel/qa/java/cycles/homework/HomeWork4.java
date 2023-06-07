@@ -1,5 +1,5 @@
 package com.hillel.qa.java.cycles.homework;
-
+import java.util.Scanner;
 public class HomeWork4 {
     /**
      * <p style="font-size:12px">
@@ -32,10 +32,17 @@ public class HomeWork4 {
      * </p>
      */
     public static void main(String[] args) {
-        for (int i = 1; i <= 5; i++) {
+        Scanner console = new Scanner(System.in);
 
-            for (int j = 1; j <= i; j++){
-                System.out.print("*");
+        System.out.print("Введіть висоту трикутника: ");
+        int height = console.nextInt();
+
+        System.out.print("Введіть символ для малювання трикутника: ");
+        char symbol = console.next().charAt(0);
+
+        for (int i = 1; i <= height; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(symbol);
             }
             System.out.println();
         }
