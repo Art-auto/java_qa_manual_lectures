@@ -36,8 +36,8 @@ public class Cycles {
         Тіло циклу виконується знов і знов, доки умова дорівнює true. Цикл while має такий загальний вигляд:
          */
 
-        /*int  n = 5;
-        while (n > 0)
+        /*int  n = 20;
+        while (n >= 0)
         {
             System.out.println(n);
             n--;
@@ -64,14 +64,12 @@ public class Cycles {
         доки не буде введено рядок exit.
          */
 
-        /*
-        Scanner console = new Scanner(System.in);
+     /*   Scanner console = new Scanner(System.in);
         boolean isExit = false;
         while (!isExit) {
             String s = console.nextLine();
             isExit = s.equals("exit");
-        }
-        */
+        }*/
 
         /*
         Команда break.
@@ -101,8 +99,7 @@ public class Cycles {
          На відміну від команди break, команда continue перериває поточний виток циклу, але не сам цикл.
          */
 
-       /*
-       int i = 0;
+       /*int i = 0;
        while (i <= 20) {
             if ((i % 2) == 0) {
                 i++;
@@ -110,8 +107,7 @@ public class Cycles {
             }
             System.out.println(i);
             i++;
-        }
-        */
+        }*/
 
         /*
         Зворотний цикл do while.

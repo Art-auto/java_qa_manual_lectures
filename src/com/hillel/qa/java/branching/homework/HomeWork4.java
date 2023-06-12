@@ -1,5 +1,7 @@
 package com.hillel.qa.java.branching.homework;
 
+import java.util.Scanner;
+
 public class HomeWork4 {
     /**
      * <p style="font-size:12px">
@@ -17,6 +19,22 @@ public class HomeWork4 {
      * @see <a href="https://www.w3schools.com/java/java_user_input.asp">Стаття як користуватися Scanner</a>
      */
     public static void main(String[] args) {
+        Scanner enterText = new Scanner(System.in);
+
+        System.out.println("Введіть довжини сторін трикутника:");
+        int side1 = enterText.nextInt();
+        int side2 = enterText.nextInt();
+        int side3 = enterText.nextInt();
+
+        boolean isPossible = (side1 + side2 >= side3) && (side1 + side3 >= side2) && (side2 + side3 >= side1);
+
+        if (isPossible) {
+            System.out.println("Трикутник можливо побудувати");
+        } else {
+            System.out.println("Трикутник не можливо побудувати");
+        }
+
+
 
 
     }

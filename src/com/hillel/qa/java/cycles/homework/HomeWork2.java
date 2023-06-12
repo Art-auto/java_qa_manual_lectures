@@ -1,5 +1,7 @@
 package com.hillel.qa.java.cycles.homework;
 
+import java.util.Scanner;
+
 public class HomeWork2 {
     /**
      * <p style="font-size:12px">
@@ -13,6 +15,24 @@ public class HomeWork2 {
      * @see <a href="https://www.w3schools.blog/string-to-int-java">String To Int In Java</a>
      */
     public static void main(String[] args) {
+        Scanner enterText = new Scanner(System.in);
+        System.out.println("Введи ціле число");
+
+        int a = enterText.nextInt(); // 2
+        System.out.println(" Введи друге ціле число ");
+        int b = enterText.nextInt(); // 4
+        int c = a + b;
+        System.out.println(" Cума  = " + c);
+
+        System.out.println("Введи 'Exit' для виходу");
+
+        String inputText = enterText.next();
+        if (inputText.equals("Exit")) return;
+        while (true) ;
+
+
 
     }
 }
+
+

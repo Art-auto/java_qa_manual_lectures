@@ -23,5 +23,31 @@ public class HomeWork3 {
      */
     public static void main(String[] args) {
 
+        double enterSuma = 200; // Задайте суму купівлі
+
+        String variantOplata = "карткою"; // Задайте спосіб оплати (може бути "готівкою", "карткою" або "рахунком")
+
+        double komisiya = 0; // Змінна для збереження суми комісії
+
+        switch (variantOplata) {
+            case "готівкою":
+                komisiya = 0;
+                break;
+            case "карткою":
+                komisiya = enterSuma * 0.02;
+                break;
+            case "рахунком":
+                komisiya = enterSuma * 0.05;
+                break;
+            default:
+                System.out.println("Невірний спосіб оплати");
+                return;
+        }
+
+        double sumaDlyaOplaty = enterSuma + komisiya;
+
+        System.out.println("Сума для оплати: " + sumaDlyaOplaty);
     }
 }
+
+
