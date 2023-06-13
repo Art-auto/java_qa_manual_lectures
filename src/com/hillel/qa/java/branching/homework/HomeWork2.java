@@ -12,6 +12,19 @@ public class HomeWork2 {
      *
      */
     public static void main(String[] args) {
+        int x = 2;
+        int y = -1;
 
+        if (x > 0 && y > 0) {
+            System.out.println("The target is in the first quadrant!");
+        } else if (x < 0 && y > 0) {
+            System.out.println("The target is in the second quadrant!");
+        } else if (x < 0 && y < 0) {
+            System.out.println("The target is in the third quadrant!");
+        } else if (x > 0 && y < 0) {
+            System.out.println("The target is in the fourth quadrant!");
+        } else {
+            System.out.println("The target is at the origin (0, 0)!");
+        }
     }
 }

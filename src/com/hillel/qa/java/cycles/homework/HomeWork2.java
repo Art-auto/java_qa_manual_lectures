@@ -1,4 +1,5 @@
 package com.hillel.qa.java.cycles.homework;
+import java.util.Scanner;
 
 public class HomeWork2 {
     /**
@@ -13,6 +14,24 @@ public class HomeWork2 {
      * @see <a href="https://www.w3schools.blog/string-to-int-java">String To Int In Java</a>
      */
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
 
+        System.out.println("Enter integers to calculate their sum (enter 'Exit' to end):");
+        String input = scanner.nextLine();
+
+        while (!input.equalsIgnoreCase("Exit")) {
+            try {
+                int number = Integer.parseInt(input);
+                sum += number;
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter an integer or 'Exit'.");
+            }
+
+            input = scanner.nextLine();
+        }
+
+        System.out.println("The sum of the entered integers is: " + sum);
+        scanner.close();
     }
 }

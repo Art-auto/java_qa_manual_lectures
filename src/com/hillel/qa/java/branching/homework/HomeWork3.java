@@ -22,6 +22,28 @@ public class HomeWork3 {
      * </p>
      */
     public static void main(String[] args) {
+        double purchaseAmount = 100.0;
+        double paymentAmount = purchaseAmount;
 
+        String paymentMethod = "card";
+
+        switch (paymentMethod) {
+            case "cash":
+                // Без додаткової комісії при розрахунку готівкою
+                break;
+            case "card":
+                // Додаткова комісія 2% за оплату карткою
+                paymentAmount += purchaseAmount * 0.02;
+                break;
+            case "invoice":
+                // Додаткова комісія 5% за оплату рахунку
+                paymentAmount += purchaseAmount * 0.05;
+                break;
+            default:
+                System.out.println("Invalid payment method!");
+                return;
+        }
+
+        System.out.println("Amount for payment: " + paymentAmount);
     }
 }

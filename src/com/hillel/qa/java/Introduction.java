@@ -39,6 +39,9 @@ public class Introduction {
         не спрацює, тому що з маленької букви.
          */
         System.out.println("Hello world");
+        System.out.println("Hello");
+        System.out.println("world");
+        System.out.println("!!!");
 
         // TODO: Створіть свій клас та виведіть там "QA це круто!"
     }

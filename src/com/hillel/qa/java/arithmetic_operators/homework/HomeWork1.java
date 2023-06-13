@@ -1,5 +1,5 @@
 package com.hillel.qa.java.arithmetic_operators.homework;
-
+import java.time.LocalDate;
 public class HomeWork1 {
     /**
      * <p style="font-size:12px">
@@ -13,7 +13,12 @@ public class HomeWork1 {
      *     <li>Вивести в консоль "Моєму другу (число) років".</li>
      * </ul>
      */
-    public static void main(String[] args) {
+//    LocalDateTime now = LocalDateTime.now();
 
+    public static void main(String[] args) {
+        int currentYear = LocalDate.now().getYear();
+        int friendYear = 2005;
+        int friendAge = currentYear - friendYear;
+        System.out.print("Моєму другу "+friendAge+" років");
     }
 }

@@ -14,6 +14,12 @@ public class HomeWork1 {
      * </ol>
      */
     public static void main(String[] args) {
+        boolean ageCondition = true; // Assuming the age condition is true
+        boolean hasInsurance = true; // Assuming the insurance condition is true
+        boolean hasMedicalPermission = true; // Assuming the medical permission condition is true
 
+        boolean isProvideDriverLicense = ageCondition && hasInsurance && hasMedicalPermission;
+
+        System.out.println("Is the driver's license provided? " + isProvideDriverLicense);
     }
 }
