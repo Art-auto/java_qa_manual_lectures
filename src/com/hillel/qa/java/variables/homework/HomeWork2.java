@@ -17,6 +17,14 @@ public class HomeWork2 {
         System.out.println(city);
         System.out.println(age);
         System.out.println(square);*/
+        String country = "Ukraine";
+        String city = "Odessa";
+        int age = 227;
+        double square = 162.4;
+        System.out.println(country);
+        System.out.println(city);
+        System.out.println(age);
+        System.out.println(square);
 
     }
 }
