@@ -22,6 +22,27 @@ public class HomeWork3 {
      * </p>
      */
     public static void main(String[] args) {
+        double purchaseAmount = 500;
+        String paymentMethod = "card";
+        double totalAmount = 0.0;
 
+        switch (paymentMethod) {
+            case "cash":
+                totalAmount = purchaseAmount;
+                break;
+            case "card":
+                double cardCommission = 0.02 * purchaseAmount;
+                totalAmount = purchaseAmount + cardCommission;
+                break;
+            case "invoice":
+                double invoiceCommission = 0.05 * purchaseAmount;
+                totalAmount = purchaseAmount + invoiceCommission;
+                break;
+            default:
+                System.out.println("Unknown payment method");
+                return;
+        }
+
+        System.out.println("Amount to pay : " + totalAmount);
     }
 }

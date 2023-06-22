@@ -16,5 +16,11 @@ public class HomeWork1 {
         int b = 3;
         boolean result = a > b;
         System.out.println(result);*/
+        int a = 5;
+        int b = 3;
+
+        boolean result = !(a > b);
+
+        System.out.println(result);
     }
 }
