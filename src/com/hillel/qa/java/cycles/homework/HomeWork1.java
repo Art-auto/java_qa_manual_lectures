@@ -1,5 +1,5 @@
 package com.hillel.qa.java.cycles.homework;
-
+import java.util.Scanner;
 public class HomeWork1 {
     /**
      * <p style="font-size:12px">
@@ -7,6 +7,17 @@ public class HomeWork1 {
      * </p>
      */
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int count = 0;
+
+        while (count < 10) {
+            System.out.print("Введіть марку авто: ");
+            String brand = scanner.nextLine();
+            System.out.println(brand + " найкраще авто.");
+            count++;
+        }
+
+        scanner.close();
 
     }
 }

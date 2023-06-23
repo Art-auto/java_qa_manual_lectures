@@ -1,5 +1,5 @@
 package com.hillel.qa.java.cycles.homework;
-
+import java.util.Scanner;
 public class HomeWork2 {
     /**
      * <p style="font-size:12px">
@@ -13,6 +13,28 @@ public class HomeWork2 {
      * @see <a href="https://www.w3schools.blog/string-to-int-java">String To Int In Java</a>
      */
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        String input;
+
+        while (true) {
+            System.out.print("Введіть ціле число (або Exit для виходу): ");
+            input = scanner.nextLine();
+
+            if (input.equalsIgnoreCase("Exit")) {
+                break;
+            }
+
+            try {
+                int number = Integer.parseInt(input);
+                sum += number;
+            } catch (NumberFormatException e) {
+                System.out.println("Некоректне введення. Спробуйте ще раз.");
+            }
+        }
+
+        System.out.println("Сума введених чисел: " + sum);
+        scanner.close();
 
     }
 }

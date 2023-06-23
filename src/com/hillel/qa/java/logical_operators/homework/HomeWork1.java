@@ -14,6 +14,12 @@ public class HomeWork1 {
      * </ol>
      */
     public static void main(String[] args) {
+        int age = 22;
+        boolean hasInsurance = true;
+        boolean hasMedicalApproval = true;
 
+        boolean isProvideDriverLicense = (age >= 16) && hasInsurance && hasMedicalApproval;
+
+        System.out.println("isProvideDriverLicense: " + isProvideDriverLicense);
     }
 }
