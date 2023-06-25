@@ -7,6 +7,14 @@ public class HomeWork1 {
      * </p>
      */
     public static void main(String[] args) {
+        String carBrand = "AUDI";
 
+        int count = 1;
+        while (count <= 10) {
+            System.out.println(carBrand + " найкраще авто.");
+            count++;
     }
 }
+}
+
+

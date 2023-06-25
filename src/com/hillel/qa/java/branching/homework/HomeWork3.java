@@ -22,6 +22,28 @@ public class HomeWork3 {
      * </p>
      */
     public static void main(String[] args) {
+                double purchaseAmount = 1000.0;
+                String paymentMethod = "card";
+                double commission = 0.0;
 
-    }
-}
+                switch (paymentMethod) {
+                    case "cash":
+                        break;
+                    case "card":
+                        commission = purchaseAmount * 0.02;
+                        break;
+                    case "invoice":
+                        commission = purchaseAmount * 0.05;
+                        break;
+                    default:
+                        System.out.println("Невідомий спосіб оплати");
+                        return;
+                }
+                double totalAmount = purchaseAmount + commission;
+
+                System.out.println("Сума для оплати: " + totalAmount);
+            }
+        }
+
+
+
